@@ -46,6 +46,6 @@ gerar_imagens <- function(titulo,quantidade){
   setwd(paste0('../'))
 }
 
-gerar_imagens('feliz',100)
-gerar_imagens('triste',100)
-gerar_imagens('indefinido',100)
+gerar_imagens('feliz',1000)
+gerar_imagens('triste',1000)
+gerar_imagens('indefinido',1000)
