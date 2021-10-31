@@ -1,12 +1,13 @@
 library(magick)
 library(tidyverse)
 
-olhos <- image_read("olhos.gif")
-feliz <- image_read("boca_feliz.gif")
-triste <- image_read("boca_triste.gif")
+olhos <- image_read("base/olho.gif")
+feliz <- image_read("base/boca_feliz.gif")
+triste <- image_read("base/boca_triste.gif")
 
-dir.create('feliz')
-dir.create('triste')
+# # Criar diretórios, se necessário
+# dir.create('feliz')
+# dir.create('triste')
 
 position <- function(){sample(-10:10, 1)}
 s <- function(){sample(1:20, 1)}
