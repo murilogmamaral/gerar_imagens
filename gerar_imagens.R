@@ -1,14 +1,12 @@
 library(magick)
 library(tidyverse)
-require(grDevices)
 
 olhos <- image_read("olhos.gif")
 feliz <- image_read("boca_feliz.gif")
 triste <- image_read("boca_triste.gif")
-indefinido <- image_read("boca_indefinido.gif")
+
 dir.create('feliz')
 dir.create('triste')
-dir.create('indefinido')
 
 position <- function(){sample(-10:10, 1)}
 s <- function(){sample(1:20, 1)}
@@ -21,7 +19,6 @@ gerar_imagens <- function(titulo,quantidade){
     humor = triste
   }
   if (titulo=='feliz') { humor = feliz }
-  if (titulo=='indefinido') { humor = indefinido }
   for (i in 1:quantidade){
     png(file=paste0(titulo,"_",i,".png"),width=224, height=224)
     op <- par(bg = "white",mar=c(0,0,0,0))
@@ -48,4 +45,3 @@ gerar_imagens <- function(titulo,quantidade){
 
 gerar_imagens('feliz',1000)
 gerar_imagens('triste',1000)
-gerar_imagens('indefinido',1000)
