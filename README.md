@@ -1,2 +1,4 @@
 # gerar_imagens
-Script para gerar imagens de treino para modelo de deep learning
+Este repositório traz um código de geração de imagens de treino para um modelo de deep learning. A partir da combinação aleatória de 20 tipos de olho e 40 tipos de boca, foram geradas 2000 imagens de carinhas tristes e felizes. Com isso, um modelo foi treinado para classificar se uma carinha autoral é 'feliz' ou 'triste'. O resultado desse exercício está no arquivo _ExercicioDeepLearning.ipynb_.
+
+ <img src="https://github.com/murilogmamaral/gerar_imagens/blob/main/feliz/feliz_1.png" height="80"> <img src="https://github.com/murilogmamaral/gerar_imagens/blob/main/triste/triste_1.png" height="80"> <img src="https://github.com/murilogmamaral/gerar_imagens/blob/main/feliz/feliz_2.png" height="80"> <img src="https://github.com/murilogmamaral/gerar_imagens/blob/main/triste/triste_2.png" height="80"> <img src="https://github.com/murilogmamaral/gerar_imagens/blob/main/feliz/feliz_3.png" height="80"> <img src="https://github.com/murilogmamaral/gerar_imagens/blob/main/triste/triste_3.png" height="80">
